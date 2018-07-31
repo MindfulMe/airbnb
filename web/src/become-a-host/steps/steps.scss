@@ -1,0 +1,179 @@
+$light: #FAFAFA;
+$medium: #E6E6E6;
+$dark: #A2A2A2;
+$darkest: #4B4B4B;
+
+
+.room-parent-container {
+  font-family: 'Roboto';
+  color: #4B4B4B;
+}
+.active-tab {
+  padding: 12px 14px;
+  font-size: 15px;
+  width: 16.666666666666668%;
+  max-width: 100%;
+  background-color: #E6E6E6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  outline: 1px solid #dce0e0;
+  float: left;
+}
+.inactive-tab {
+  padding: 12px 14px;
+  font-size: 15px;
+  width: 16.666666666666668%;
+  max-width: 100%;
+  background-color: #FAFAFA;
+  outline: 1px solid #dce0e0;
+  float: left;
+  text-overflow: ellipsis;
+}
+.inactive-tab:hover {
+  background-color: #F0F0F0;
+  cursor: pointer;
+}
+.content {
+  margin-top: 15px;
+}
+.form-side {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 90px;
+}
+
+.instruction-side {
+  position: fixed;
+  left: 55%;
+  top: 130px;
+}
+.form-container {
+  float: none;
+  padding: 20px;
+  margin: 0 0 0 0;
+  .form-title-large {
+    color: $darkest;
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 363px;
+    word-wrap: break-word;
+  }
+  .form-title-medium {
+    color: $dark;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+.button-container {
+  width: 320px;
+  border: 1px solid $medium;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  .placetype-icon {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50px;
+  }
+}
+.drop-down-menu {
+  border: 1px solid $medium;
+  border-radius: 4px;
+  height: 65px;
+  width: 320px;
+  margin-top: 4px;
+}
+.step-nav {
+  position: fixed;
+    z-index: 111;
+    bottom: 0px;
+  border-top: 1px solid $medium;
+  .back-next {
+    margin-top: 20px;
+  }
+}
+.incrementer {
+  @extend .drop-down-menu;
+  padding: 22px 0 0 20px;
+  .increment-label {
+    color: $dark;
+    padding-left: 6px;
+  }
+  .increment-number {
+    color: $medium;
+  }
+  .subtract {
+    background: none;
+    border: none;
+    border-left: 1px solid $medium;
+    font-size: 42px;
+    font-weight: 300;
+    width: 63px;
+    margin-top: -22px;
+    color: $medium;
+  }
+  .add {
+    @extend .subtract;
+    color: $dark;
+  }
+}
+.clicker {
+  -webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+.note-container {
+  max-width: 306px;
+  padding: 26px;
+  margin: 50px 0 0 26px;
+  background-color: white;
+  border: 1px solid $medium;
+  border-radius: 3px;
+
+  .note-title {
+    color: $darkest;
+  }
+  .note-content {
+    color: $dark;
+    margin-top: 3px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+  }
+}
+
+.next-btn {
+  text-align: right;
+}
+
+.back-btn {
+
+}
+
+@media (min-width: 768px) {
+  .instruction-side {
+    margin-top: 5px;
+  }
+  .form-container {
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+  }
+  .form-side {
+      top: 140px;
+      width: 55%;
+  }
+  .step-nav {
+    float: right;
+  }
+}

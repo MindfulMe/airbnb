@@ -1,0 +1,90 @@
+html,
+body {
+  background-color: #EDEFED;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER */
+.header {
+  z-index: 9999;
+  height: 66px;
+  line-height: 66px;
+  color: #484848;
+  background-color: #fff;
+}
+
+.header_logo {
+  font-weight: 700;
+  margin-left: 25px;
+}
+
+.air-logo {
+  vertical-align: middle;
+}
+
+/* MENU */
+.menu {
+  float: right;
+}
+
+.menu a {
+  padding: 0 10px;
+  color: #cecece;
+}
+
+.menu a:hover {
+  color: rgb(255, 90, 95);
+}
+
+.become-a-host {
+  margin-right: 10px;
+  padding: 3px;
+  border-radius: 0%;
+  color:black;
+}
+.become-a-host span:hover {
+  padding: 3px;
+  border-radius: 0%;
+  color:rgb(255, 90, 95);
+}
+
+.left-border-menu {
+  border: 10px solid #dce0e0;
+}
+
+.left-border-menu:hover {
+  border: 1px solid rgb(255, 90, 95);
+  margin:20px;
+  background-color: rgb(255, 90, 95);
+}
+
+/* Burger Menu */
+.bm-burger-button{
+  display: none;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+  .menu {
+  
+      display: none;
+  }
+
+  .bm-burger-button{
+    display: block;
+  }
+
+  .air-logo {
+    margin-left: 30px;
+  }
+}

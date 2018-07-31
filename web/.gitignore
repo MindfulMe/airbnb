@@ -1,0 +1,15 @@
+#Node modules
+node_modules
+
+#Config
+nodeserver/config.json
+nodeserver/AWS/config.json
+
+#Output files
+public/bundle
+
+misc
+
+legacy.js
+
+public/bundle

@@ -1,0 +1,87 @@
+.row {
+    margin: 0;
+}
+#picture {
+  position: relative;
+}
+#picture:hover > .overlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  background-color:#000;
+  opacity:0.1;
+}
+.main-home-container {
+  width: 100%;
+  margin-bottom: 70px;
+}
+#social-media {
+  border: none;
+}
+#explore-card-margin {
+  margin-bottom: -30px !important;
+}
+.fullscreen-video-player {
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    -webkit-transition: opacity 800ms ease;
+    -moz-transition: opacity 800ms ease;
+    -o-transition: opacity 800ms ease;
+    transition: opacity 800ms ease;
+    width: 100%;
+    z-index: -1001;
+}
+.belong-anywhere {
+  display: none;
+}
+.our-community {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  //TODO: make image shrink
+  .profilePic{
+    // max-width: 661px;
+    // max-height: 661px;
+  }
+  .heroImage{
+    height: 450px;
+  }
+  .homeCaro{
+    width: 425px;
+  }
+
+}
+@media (min-width: 768px) {
+  .main-home-container {
+    width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .heroImage{
+    height: 600px;
+  }
+  #explore-card-margin {
+    margin-bottom: 30px !important;
+  }
+  .home-container{
+      margin-top: 70px;
+  }
+  .homeCaro{
+    width: 686px;
+  }
+  .belong-anywhere {
+    display: block;
+  }
+  .our-community {
+    display: block;
+  }
+}
+@media (min-width: 1128px) {
+  .main-home-container {
+    width: 1050px;
+  }
+}
