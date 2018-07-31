@@ -1,4 +1,4 @@
-# Airbnb Clone - A React project at DevMountain
+# Airbnb
 
 ## Install
 
