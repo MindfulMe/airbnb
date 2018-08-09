@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 
 import Rheostat from 'rheostat'
 import Slider from 'react-slick'
 import { Link } from 'react-router'
-require('./searchResults.scss');
+require('./searchResults.css');
 
 var sliderMin = 0;
 

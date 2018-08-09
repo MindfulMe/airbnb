@@ -1,9 +1,9 @@
-import React, {createClass} from 'react';
+import React, { createClass } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import moment from 'moment';
 
 import SearchBar from '../date-range-picker/SearchBar.jsx';
-require('./_datepicker.scss');
+require('./_datepicker.css');
 
 
 
@@ -42,13 +42,13 @@ function callback(results, status) {
 
 var HomeSearchBar = createClass({
 
-render(){
-  return(
-    <div>
-      <SearchBar />
-    </div>
+  render() {
+    return (
+      <div>
+        <SearchBar />
+      </div>
     )
-}
+  }
 
 })
 

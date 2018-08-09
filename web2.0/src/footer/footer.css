@@ -23,7 +23,6 @@ li:hover {
   border-top: none !important;
   width: 100% !important;
 }
-
 @media (min-width: 767px) {
   .footer-main {
     height: 59vh;

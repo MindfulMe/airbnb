@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MessageModal from './message-modal.js'
 import axios from 'axios';
-require('./rooms.component.scss');
+require('./rooms.component.css');
 
 const style = {
   boldFont: {
@@ -103,11 +103,11 @@ class About extends Component {
           house_rules: hostInfo.data.listing.house_rules,
         }
       })
-    }).catch(function(error){
+    }).catch(function (error) {
       console.log(error); // Network Error
       console.log(error.status); // undefined
       console.log(error.code); // undefined
-      });
+    });
   }
 
 

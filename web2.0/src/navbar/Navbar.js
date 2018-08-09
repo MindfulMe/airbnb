@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import { Link } from 'react-router'
 import { stack as Menu } from 'react-burger-menu';
@@ -8,7 +8,7 @@ import LoginModal from './login-modal.js'
 import SignUp from './signup'
 import Help from './help';
 
-require('./navbar.component.scss');
+require('./navbar.component.css');
 let RadiumLink = Radium(Link);
 
 var styles = {

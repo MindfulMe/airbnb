@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 import Dialog from 'material-ui/Dialog';
 import Slider from 'react-slick'
 import axios from 'axios';
 
-require('./rooms.component.scss');
+require('./rooms.component.css');
 
 
 
@@ -54,11 +54,11 @@ class Header extends React.Component {
           picture_urls: hostInfo.data.listing.picture_urls,
         }
       }, () => { console.log('picture_urls from header: ', this.state.listing.picture_urls) })
-    }).catch(function(error){
+    }).catch(function (error) {
       console.log(error); // Network Error
       console.log(error.status); // undefined
       console.log(error.code); // undefined
-      });
+    });
   }
 
   handleOpen = () => {

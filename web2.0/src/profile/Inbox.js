@@ -11,7 +11,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import axios from 'axios';
 
-require('./inbox.scss');
+require('./inbox.css');
 
 export default class Inbox extends Component {
   constructor(props) {
@@ -23,11 +23,11 @@ export default class Inbox extends Component {
     axios.get('/getMessages').then(response => {
       console.log(response.data.threads);
       this.setState({ messages: response.data.threads })
-    }).catch(function(error){
+    }).catch(function (error) {
       console.log(error); // Network Error
       console.log(error.status); // undefined
       console.log(error.code); // undefined
-      });
+    });
   }
 
   render() {

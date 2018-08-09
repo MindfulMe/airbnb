@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Home from 'material-ui/svg-icons/action/home';
 import People from 'material-ui/svg-icons/social/people-outline';
 import Contacts from 'material-ui/svg-icons/communication/contacts';
 import Bed from 'material-ui/svg-icons/notification/airline-seat-individual-suite';
 import axios from 'axios';
-require('./rooms.component.scss');
+require('./rooms.component.css');
 
 
 class Summary extends Component {
@@ -54,11 +54,11 @@ class Summary extends Component {
           room_type: hostInfo.data.listing.room_type,
         }
       })
-    }).catch(function(error){
+    }).catch(function (error) {
       console.log(error); // Network Error
       console.log(error.status); // undefined
       console.log(error.code); // undefined
-      });
+    });
   }
 
 

@@ -4,7 +4,7 @@ import About from "./About";
 import Summary from "./Summary"
 import Footer from '../footer/Footer';
 
-require('./rooms.component.scss');
+require('./rooms.component.css');
 
 
 class Rooms extends Component {

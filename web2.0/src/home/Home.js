@@ -6,7 +6,7 @@ import ExploreWorld from "./ExploreWorld";
 import BelongAnywhere from "./BelongAnywhere";
 import OurCommunity from "./OurCommunity";
 import Footer from '../footer/Footer';
-require('./home.component.scss');
+require('./home.component.css');
 
 
 
